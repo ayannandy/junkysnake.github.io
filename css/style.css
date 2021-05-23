@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("../assest/bgimg.jpg");
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#board{
+    background: linear-gradient(rgb(64, 240, 64),rgb(226, 226, 72));
+    width: 100vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(red, yellow)!important;
+    border: 2px purple;
+    transform: scale(1.02);
+    border-radius: 6px;
+}
+.snake{
+    background-color: purple;
+    border: .25vmin white;
+    border-radius: 12px;
+}
+.food{
+    background:linear-gradient(red , purple);
+    border: black;
+    border-radius: 8px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Reggae One', cursive;
+    color: red;
+    border: 2px white;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 183px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Reggae One', cursive;
+    color: rgba(255, 0, 0, 0.856);
+}
